@@ -9,9 +9,11 @@ const Header = () => {
                 <Container>
                     <Navbar.Brand href="#home">Fitness Guru</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#services">Services</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
+                        <Nav.Link href="/home">Home</Nav.Link>
+                        <Nav.Link href="/services">Services</Nav.Link>
+                        <Nav.Link href="/checkout">Checkout</Nav.Link>
+                        <Nav.Link href="/login">Login</Nav.Link>
+                        <Nav.Link href="/signup">Signup</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>

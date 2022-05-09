@@ -4,6 +4,9 @@ import Home from './Components/Js/Home/Home';
 import Services from './Components/Js/Services';
 import Header from './Components/Js/Shared/Header';
 import Footer from './Components/Js/Shared/Footer';
+import Checkout from './Components/Js/Protected/Checkout';
+import Login from './Components/Js/Login';
+import Signup from './Components/Js/Signup';
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/services" element={<Services></Services>}></Route>
+        <Route path="/checkout" element={<Checkout/>}></Route>
+        <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/signup" element={<Signup></Signup>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
