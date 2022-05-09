@@ -2,8 +2,7 @@ import React from 'react';
 import { Spinner } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Navigate, useLocation } from 'react-router-dom';
-import auth from '../../../firebase.init';
-import './RequireAuth.css';
+import auth from './../../firebase.init';
 
 
 const RequireAuth = ({ children }) => {

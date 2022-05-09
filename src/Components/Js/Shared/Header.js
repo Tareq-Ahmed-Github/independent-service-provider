@@ -17,11 +17,11 @@ const Header = () => {
                     <Navbar.Brand href="/home">Fitness Guru</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="me-auto">
-                        <Nav.Link href="/home">Home</Nav.Link>
-                        <Nav.Link href="/services">Services</Nav.Link>
-                        <Nav.Link href="/checkout">Checkout</Nav.Link>
+                        <Link to="/home" className="mx-1 text-decoration-none">Home</Link>
+                        <Link to="/services" className="mx-1 text-decoration-none">Services</Link>
+                        <Link to="/checkout" className="mx-1 text-decoration-none">Checkout</Link>
                         <Form className="d-flex me-4">
-                            {user ? <Link to='/login' onClick={logout} className="mx-1">LOG OUT</Link>
+                            {user ? <Link to='/login' onClick={logout} className="mx-1 text-decoration-none">Log out</Link>
                                 : <Link to="/login"  className="mx-1 text-decoration-none">Login</Link>}
                             <Link to="/signup"  className="mx-1 text-decoration-none">Signup</Link>
                         </Form>
