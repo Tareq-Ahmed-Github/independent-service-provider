@@ -1,12 +1,12 @@
 import React, { useRef } from 'react';
 import { Button, Form, Spinner } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
-import auth from '../../../firebase.init';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
-import SocialSign from '../SocialSign/SocialSign';
+import auth from './../../firebase.init';
+import SocialSign from './SocialLogin';
 
 
-const Register = () => {
+const Login = () => {
     const [
         createUserWithEmailAndPassword,
         user,
@@ -35,7 +35,7 @@ const Register = () => {
         </div>
     }
 
-    const handleRegister = async (event) => {
+    const handleLogin = async (event) => {
         event.preventDefault();
         const name = nameRef.current.value;
 
@@ -46,13 +46,13 @@ const Register = () => {
         await createUserWithEmailAndPassword(email, password)
         await updateProfile({ displayName: name });
     }
-    const navigateRegister = event => {
-        navigate('/register')
+    const navigateLogin = event => {
+        navigate('/login')
     }
     return (
         <div >
-            <h1 className='text-center m-3'>Please Register</h1>
-            <Form onSubmit={handleRegister} className="w-50 mx-auto">
+            <h1 className='text-center m-3'>Create Account</h1>
+            <Form onSubmit={handleLogin} className="w-50 mx-auto">
                 <Form.Group className="mb-3" controlId="formBasicName">
                     <Form.Label>Name</Form.Label>
                     <Form.Control ref={nameRef} type="text" placeholder="Enter Name" />
@@ -68,10 +68,10 @@ const Register = () => {
                 </Form.Group>
                 <div className='w-50 text-center mx-auto'>
                     <Button variant="text-light px-5 w-100 btn-outline-dark fw-bold hover-color btn-light rounded-pill" type="submit">
-                        Register
+                        Confirm
                     </Button>
                 </div>
-                <p className='m-2'>Already have an account? <Link to='/register' className=' text-danger' onClick={navigateRegister}>Please LogIn</Link></p>
+                <p className='m-2'>Already have an account? <Link to='/login' className=' text-danger' onClick={navigateLogin}>Login</Link></p>
             </Form>
             <hr className='w-50 mx-auto' />
 
@@ -80,4 +80,4 @@ const Register = () => {
     );
 };
 
-export default Register;
+export default Login;

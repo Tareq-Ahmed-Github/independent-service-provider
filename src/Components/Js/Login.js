@@ -2,10 +2,10 @@ import React, { useRef } from 'react';
 import { Button, Form, Spinner } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import auth from '../../../firebase.init';
 import SocialLogin from './SocialLogin';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import auth from './../../firebase.init';
 const Login = () => {
 
     const [
@@ -50,8 +50,8 @@ const Login = () => {
         toast('email send for reset');
     }
 
-    const navigateRegister = event => {
-        navigate('/register')
+    const navigateSignup = event => {
+        navigate('/signup')
     }
     return (
         <div >
@@ -72,7 +72,7 @@ const Login = () => {
                         Log in
                     </Button>
                 </div>
-                <p className='p-2'>New to Power Zone? <Link to='/register' className='text-danger' onClick={navigateRegister}>Please Register</Link></p>
+                <p className='p-2'>New to Fitness Guru? <Link to='/signup' className='text-danger' onClick={navigateSignup}>Signup</Link></p>
                 <p className=''><Button className='px-0 btn-md-size w-25 w  btn-danger' onClick={resetPassword}>Reset Password </Button></p>
             </Form>
 
