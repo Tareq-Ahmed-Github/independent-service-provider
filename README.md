@@ -1,3 +1,19 @@
+#Fitness Guru
+[Fitness Guru](https://fitness-guru-b08ef.web.app/)
+
+## About this website
+
+1. This is a website for a fitness trainer.
+2. the Homepage contains header, banner, services, contact(extra),footer.
+3. there is pages for login and signup. services cannot be bought without login, so user cannot reach checkout page if not logged in.
+4. there is also a 404 NptFound page.
+5. the website is hosted in the firebase.
+
+## TECHNOLOGY USED
+
+vscode, react-bootstrap, react-router, react-firebase-hook, firebase, react-toastify etc.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -34,7 +34,7 @@ const Services = () => {
     ]
     return (
         <div id='services'>
-            <h2 className='my-5'>Our Services</h2>
+            <h2 className='my-5'>My Services</h2>
             <div className='d-flex'>
                 {
                     allServices.map(service => <Service key={service.id} service={service}></Service>)
