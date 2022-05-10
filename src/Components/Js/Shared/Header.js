@@ -20,6 +20,7 @@ const Header = () => {
                         <Link to="/home" className="mx-1 text-decoration-none">Home</Link>
                         <Link to="/services" className="mx-1 text-decoration-none">Services</Link>
                         <Link to="/checkout" className="mx-1 text-decoration-none">Checkout</Link>
+                        <Link to="/blogs" className="mx-1 text-decoration-none">Blogs</Link>
                         <Form className="d-flex me-4">
                             {user ? <Link to='/login' onClick={logout} className="mx-1 text-decoration-none">Log out</Link>
                                 : <Link to="/login"  className="mx-1 text-decoration-none">Login</Link>}
