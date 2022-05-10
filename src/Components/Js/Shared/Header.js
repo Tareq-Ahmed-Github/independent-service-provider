@@ -18,6 +18,7 @@ const Header = () => {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="me-auto">
                         <Link to="/home" className="mx-1 text-decoration-none">Home</Link>
+                        <Link to="/about" className="mx-1 text-decoration-none">About</Link>
                         <Link to="/services" className="mx-1 text-decoration-none">Services</Link>
                         <Link to="/checkout" className="mx-1 text-decoration-none">Checkout</Link>
                         <Link to="/blogs" className="mx-1 text-decoration-none">Blogs</Link>

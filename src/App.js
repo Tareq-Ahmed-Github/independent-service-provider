@@ -10,6 +10,7 @@ import Signup from './Components/Js/Signup';
 import RequireAuth from './Components/Js/RequireAuth';
 import NotFound from './Components/Js/NotFound';
 import Blogs from './Components/Js/Blogs';
+import About from './Components/Js/About';
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
+        <Route path="/about" element={<About/>}></Route>
         <Route path="/services" element={<Services></Services>}></Route>
         <Route path='/checkout' element={
           <RequireAuth><Checkout></Checkout></RequireAuth>
