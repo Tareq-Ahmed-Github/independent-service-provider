@@ -54,16 +54,13 @@ const Login = () => {
             <h1 className='text-center m-3'>Create Account</h1>
             <Form onSubmit={handleLogin} className="w-50 mx-auto">
                 <Form.Group className="mb-3" controlId="formBasicName">
-                    <Form.Label>Name</Form.Label>
                     <Form.Control ref={nameRef} type="text" placeholder="Enter Name" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
                     <Form.Control ref={emailRef} required type="email" placeholder="Enter email" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
                     <Form.Control ref={passRef} required type="password" placeholder="Password" />
                 </Form.Group>
                 <div className='w-50 text-center mx-auto'>

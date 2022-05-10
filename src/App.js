@@ -11,6 +11,7 @@ import RequireAuth from './Components/Js/RequireAuth';
 import NotFound from './Components/Js/NotFound';
 import Blogs from './Components/Js/Blogs';
 import About from './Components/Js/About';
+import Contact from './Components/Js/Contact';
 function App() {
   return (
     <div className="App">
@@ -18,12 +19,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
-        <Route path="/about" element={<About/>}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
         <Route path="/services" element={<Services></Services>}></Route>
         <Route path='/checkout' element={
           <RequireAuth><Checkout></Checkout></RequireAuth>
         }></Route>
-        <Route path="/blogs" element={<Blogs/>}></Route>
+        <Route path="/blogs" element={<Blogs />}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<Signup></Signup>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>

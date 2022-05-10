@@ -59,12 +59,10 @@ const Login = () => {
             <h1 className='text-center m-3'>Log In</h1>
             <Form onSubmit={handleSubmit} className="w-50 mx-auto">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
                     <Form.Control ref={emailRef} required type="email" placeholder="Enter email" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
                     <Form.Control ref={passRef} required type="password" placeholder="Password" />
                 </Form.Group>
                 <div className='w-50 w-sm-100 text-center mx-auto'>
